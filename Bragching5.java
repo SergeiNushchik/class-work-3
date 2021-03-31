@@ -8,7 +8,7 @@ public class Bragching5 {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите число подлежащее переводу");
         int number = in.nextInt();
-        System.out.println("Выберите систему исчесления: \n b - байты \n k - килобайты");
+        System.out.println("Выберите систему исчисления: \n b - байты \n k - килобайты");
         String type = in.next();
 
         switch (type){
@@ -19,7 +19,7 @@ public class Bragching5 {
                 System.out.println(number/1024);
                 break;
             default:
-                System.out.println("Упс...не верно выбранна система исчечления");
+                System.out.println("Упс...не верно выбранна система исчиcления");
         }
 
 
