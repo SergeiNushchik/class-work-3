@@ -2,17 +2,23 @@ package ClassWork3;
 
 import java.util.Scanner;
 
-public class Bragching6 {
+public class Bragching7 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Введите символ");
-        int num = in.nextInt();
-
-            if ((num > 65 && num < 90) | (num > 97 && num < 122)){
-                System.out.println("Это буква английского языка: " +(char)num );
-            }  else {
-                System.out.println("Это не буква, а символ: " + (char)num);
-            }
+        System.out.println("Введите год");
+        int year = in.nextInt();
+            if (year % 4 != 0){
+                System.out.println("Обычный");
+            } else if (year % 100 == 0) {
+                if (year % 400 == 0){
+                    System.out.println("Високосный");
+                }else {
+                    System.out.println("Обычный");
                 }
+            } else {
+                System.out.println("Високосный");
+            }
+
     }
+}
 

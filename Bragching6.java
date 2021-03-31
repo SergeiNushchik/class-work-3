@@ -2,31 +2,17 @@ package ClassWork3;
 
 import java.util.Scanner;
 
-public class Bragching5 {
+public class Bragching6 {
     public static void main(String[] args) {
-
         Scanner in = new Scanner(System.in);
-        System.out.println("Введите число подлежащее переводу");
-        int number = in.nextInt();
-        System.out.println("Выберите систему исчисления: \n b - байты \n k - килобайты");
-        String type = in.next();
+        System.out.println("Введите символ");
+        int num = in.nextInt();
 
-        switch (type){
-            case "b":
-                System.out.println(number*1024);
-                break;
-            case "k":
-                System.out.println(number/1024);
-                break;
-            default:
-                System.out.println("Упс...не верно выбранна система исчиcления");
-        }
-
-
-
-
-
-
-        }
+            if ((num > 65 && num < 90) | (num > 97 && num < 122)){
+                System.out.println("Это буква английского языка: " +(char)num );
+            }  else {
+                System.out.println("Это не буква, а символ: " + (char)num);
+            }
+                }
     }
 
